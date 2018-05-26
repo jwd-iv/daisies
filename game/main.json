@@ -1,0 +1,52 @@
+{
+	"active" : true,
+	"update" : {
+		"list" : [
+			{
+				"riku::type" : "BackgroundManager"
+			},
+			{
+				"riku::type" : "FlowerManager"
+			}
+		]
+	},
+	"entities" : [
+		{
+			"archetype" : "Box",
+			"components" : {
+				"transform" : {
+				},
+				"SFMLSprite" : {
+					"x" :  -50.0,
+					"y" :    0.0,
+					"z" :  100.0,
+					"rvx" :  0.0,
+					"rvy" :  0.0,
+					"rvz" : 50.0
+				}
+			}
+		},
+		{
+			"archetype" : "Grid",
+			"components" : {
+				"transform" : {
+				},
+				"SFMLSprite" : {
+					"x" :  50.0,
+					"y" :   0.0,
+					"z" : 100.0,
+					"rvx" :   0.0,
+					"rvy" :   0.0,
+					"rvz" : -50.0
+				}
+			}
+		},
+		{
+			"archetype" : "Camera",
+			"components" : {
+				"transform" : {
+				}
+			}
+		}
+	]
+}

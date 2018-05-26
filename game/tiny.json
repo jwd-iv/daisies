@@ -1,18 +1,6 @@
 {
 	"Spaces" : {
-		"Main"    : {
-			"active" : true,
-			"update" : {
-				"list" : [
-					{
-						"riku::type" : "BackgroundManager"
-					},
-					{
-						"riku::type" : "FlowerManager"
-					}
-				]
-			}
-		}
+		"Main" : "game/main.json"
 	},
 	"Settings" : {
 	},
