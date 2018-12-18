@@ -12,42 +12,86 @@
 	},
 	"entities" : [
 		{
-			"archetype" : "Box",
+			"archetype" : "Bloom",
 			"components" : {
 				"transform" : {
 				},
 				"SFMLSprite" : {
-					"pos" : {
-						"x" : -50.0,
-						"y" :   0.0,
-						"z" : 100.0
+					"t" : {
+						"x" : 0.0,
+						"y" : 0.5,
+						"z" : 1.0
 					},
-					"rot" : {
-						"x" :  0.0,
-						"y" :  0.0,
-						"z" : 50.0
+					"s" : {
+						"x" : 0.5,
+						"y" : 0.5,
+						"z" : 1.0
 					},
-					"tex" : "daisy.png"
+					"r" : 0.0,
+					"tex" : "tex/daisy_purple1.png"
 				}
 			}
 		},
 		{
-			"archetype" : "Grid",
+			"archetype" : "Ground",
 			"components" : {
 				"transform" : {
 				},
 				"SFMLSprite" : {
-					"pos" : {
-						"x" : 50.0,
-						"y" :  0.0,
-						"z" : 80.0
+					"t" : {
+						"x" : -1.0,
+						"y" : 0.0,
+						"z" : 10.0
 					},
-					"rot" : {
-						"x" :   0.0,
-						"y" :   0.0,
-						"z" : -50.0
+					"s" :{
+						"x" : 1.0,
+						"y" : 0.25,
+						"z" : 1.0
 					},
-					"tex" : "daisy.png"
+					"r" : 0.0,
+					"tex" : "tex/ground2.png"
+				}
+			}
+		},
+		{
+			"archetype" : "Ground",
+			"components" : {
+				"transform" : {
+				},
+				"SFMLSprite" : {
+					"t" : {
+						"x" : 1.0,
+						"y" : 0.0,
+						"z" : 10.0
+					},
+					"s" :{
+						"x" : 1.0,
+						"y" : 0.25,
+						"z" : 1.0
+					},
+					"r" : 0.0,
+					"tex" : "tex/ground2.png"
+				}
+			}
+		},
+		{
+			"archetype" : "Ground",
+			"components" : {
+				"transform" : {
+				},
+				"SFMLSprite" : {
+					"t" : {
+						"x" : 0.0,
+						"y" : 0.0,
+						"z" : 10.0
+					},
+					"s" :{
+						"x" : 1.0,
+						"y" : 0.25,
+						"z" : 1.0
+					},
+					"r" : 0.0,
+					"tex" : "tex/ground2.png"
 				}
 			}
 		},

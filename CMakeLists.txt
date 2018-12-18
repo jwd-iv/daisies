@@ -19,7 +19,8 @@ include_directories(.
                     ../ext/SFML/include
                     ../tinysfml/include
                     ../tinyeng/include
-                    ../RIKU/include)
+                    ../RIKU/include
+                    ${tiny_SOURCE_DIR}/../ext/glm)
 
 file(GLOB_RECURSE DAISIES_src *.cpp)
 file(GLOB_RECURSE DAISIES_hdr *.h)
