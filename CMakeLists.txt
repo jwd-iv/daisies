@@ -25,10 +25,10 @@ include_directories(.
 file(GLOB_RECURSE DAISIES_src *.cpp)
 file(GLOB_RECURSE DAISIES_hdr *.h)
 
-add_executable(daisies ${DAISIES_src} ${DAISIES_hdr})
+add_executable(daisies WIN32 ${DAISIES_src} ${DAISIES_hdr})
 
 if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
-  set_target_properties(daisies PROPERTIES LINK_FLAGS "/SUBSYSTEM:CONSOLE")
+  set_target_properties(daisies PROPERTIES LINK_FLAGS "/SUBSYSTEM:WINDOWS")
   set_target_properties(daisies PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/game")
   set_property(DIRECTORY ${CMAKE_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT daisies)
 endif()

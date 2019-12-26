@@ -1,0 +1,17 @@
+{
+	"components" : {
+		"SFMLSprite" : {
+			"t" : { "x" : -0.65, "y" : 0.65, "z" : -9.0 },
+			"tex" : "tex/cloud_large1.png",
+			"s" : {
+				"x" : -0.5, "y" : 0.125
+			},
+			"color" : {
+				"a" : 0.5
+			}
+		},
+		"DriftComp" : {
+			"speed" : 0.005
+		}
+	}
+}

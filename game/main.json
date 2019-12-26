@@ -22,7 +22,7 @@
 					"t" : {
 						"x" : 0.0,
 						"y" : 0.0,
-						"z" : -2.0
+						"z" : -10.0
 					},
 					"r" : 0.0,
 					"tex" : "tex/sky_bg_1.png"
@@ -30,66 +30,138 @@
 			}
 		},
 		{
-			"archetype" : "Bloom",
-			"components" : { "SFMLSprite" : {
-				"t" : { "x" : -0.8, "y" : 0.15, "z" : -1.0 }
-			} }
+			"archetype" : "BigCloud",
+			"components" : {
+				"SFMLSprite" : {
+					"t" : { "x" : 0.5, "y" : 0.8 }
+				}
+			}
 		},
 		{
-			"archetype" : "Bloom",
-			"components" : { "SFMLSprite" : {
-				"t" : { "x" : -0.6, "y" : 0.15, "z" : -1.0 },
-				"tex" : "tex/daisy_blue.png"
-			} }
+			"archetype" : "MedCloud",
+			"components" : {
+				"SFMLSprite" : {
+					"t" : { "x" : -0.65, "y" : 0.65 }
+				}
+			}
 		},
 		{
-			"archetype" : "Bloom",
-			"components" : { "SFMLSprite" : {
-				"t" : { "x" : -0.4, "y" : 0.15, "z" : -1.0 },
-				"tex" : "tex/daisy_green.png"
-			} }
-		},
-		{
-			"archetype" : "Bloom",
-			"components" : { "SFMLSprite" : {
-				"t" : { "x" : -0.2, "y" : 0.15, "z" : -1.0 },
-				"tex" : "tex/daisy_red.png"
-			} }
-		},
-		{
-			"archetype" : "Bloom",
-			"components" : { "SFMLSprite" : {
-				"t" : { "x" : 0.0, "y" : 0.15, "z" : -1.0 },
-				"tex" : "tex/daisy_magenta.png"
-			} }
-		},
-		{
-			"archetype" : "Bloom",
-			"components" : { "SFMLSprite" : {
-				"t" : { "x" : 0.2, "y" : 0.15, "z" : -1.0 },
-				"tex" : "tex/daisy_yellow.png"
-			} }
-		},
-		{
-			"archetype" : "Bloom",
-			"components" : { "SFMLSprite" : {
-				"t" : { "x" : 0.4, "y" : 0.15, "z" : -1.0 },
-				"tex" : "tex/daisy_orange.png"
-			} }
-		},
-		{
-			"archetype" : "Bloom",
-			"components" : { "SFMLSprite" : {
-				"t" : { "x" : 0.6, "y" : 0.15, "z" : -1.0 },
-				"tex" : "tex/daisy_pink.png"
-			} }
-		},
-		{
-			"archetype" : "Bloom",
-			"components" : { "SFMLSprite" : {
-				"t" : { "x" : 0.8, "y" : 0.15, "z" : -1.0 },
-				"tex" : "tex/daisy_purple.png"
-			} }
+			"archetype" : "ComplexBloom",
+			"components" : {
+				"SFMLSprite" : {
+					"tex" : "tex/stem1.png",
+					"t" : { "x" : -0.8 }
+			} },
+			"children" : [ 
+				{ "components" : {
+					"SFMLSprite" : {
+						"tex" : "tex/daisy_white.png"
+				} } }
+			]
+		},{
+			"archetype" : "ComplexBloom",
+			"components" : {
+				"SFMLSprite" : {
+					"tex" : "tex/stem2.png",
+					"t" : { "x" : -0.6 }
+			} },
+			"children" : [ 
+				{ "components" : {
+					"SFMLSprite" : {
+						"tex" : "tex/daisy_red.png"
+				} } }
+			]
+		},{
+			"archetype" : "ComplexBloom",
+			"components" : {
+				"SFMLSprite" : {
+					"tex" : "tex/stem3.png",
+					"t" : { "x" : -0.4 }
+			} },
+			"children" : [ 
+				{ "components" : {
+					"SFMLSprite" : {
+						"tex" : "tex/daisy_blue.png"
+				} } }
+			]
+		},{
+			"archetype" : "ComplexBloom",
+			"components" : {
+				"SFMLSprite" : {
+					"tex" : "tex/stem4.png",
+					"t" : { "x" : -0.2 }
+			} },
+			"children" : [ 
+				{ "components" : {
+					"SFMLSprite" : {
+						"tex" : "tex/daisy_green.png"
+				} } }
+			]
+		},{
+			"archetype" : "ComplexBloom",
+			"components" : {
+				"SFMLSprite" : {
+					"tex" : "tex/stem5.png",
+					"t" : { "x" : 0.0 }
+			} },
+			"children" : [ 
+				{ "components" : {
+					"SFMLSprite" : {
+						"tex" : "tex/daisy_magenta.png"
+				} } }
+			]
+		},{
+			"archetype" : "ComplexBloom",
+			"components" : {
+					"tex" : "tex/stem6.png",
+				"SFMLSprite" : {
+					"t" : { "x" : 0.2 }
+			} },
+			"children" : [ 
+				{ "components" : {
+					"SFMLSprite" : {
+						"tex" : "tex/daisy_yellow.png"
+				} } }
+			]
+		},{
+			"archetype" : "ComplexBloom",
+			"components" : {
+				"SFMLSprite" : {
+					"tex" : "tex/stem7.png",
+					"t" : { "x" : 0.4 }
+			} },
+			"children" : [ 
+				{ "components" : {
+					"SFMLSprite" : {
+						"tex" : "tex/daisy_orange.png"
+				} } }
+			]
+		},{
+			"archetype" : "ComplexBloom",
+			"components" : {
+				"SFMLSprite" : {
+					"tex" : "tex/stem1.png",
+					"t" : { "x" : 0.6 }
+			} },
+			"children" : [ 
+				{ "components" : {
+					"SFMLSprite" : {
+						"tex" : "tex/daisy_pink.png"
+				} } }
+			]
+		},{
+			"archetype" : "ComplexBloom",
+			"components" : {
+				"SFMLSprite" : {
+					"tex" : "tex/stem2.png",
+					"t" : { "x" : 0.8 }
+			} },
+			"children" : [ 
+				{ "components" : {
+					"SFMLSprite" : {
+						"tex" : "tex/daisy_purple.png"
+				} } }
+			]
 		},
 		{
 			"archetype" : "Ground",

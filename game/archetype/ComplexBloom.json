@@ -1,0 +1,31 @@
+{
+	"components" : {
+		"SFMLSprite" : {
+			"t" : { "x" : 0.0, "y" : 0.07, "z" : -1.0 },
+			"s" : {
+				"x" : 0.2,
+				"y" : 0.2,
+				"z" : 1.0
+			},
+			"r" : 0.0,
+			"tex" : "tex/stem1.png"
+		},
+		"WaveComp" : {}
+	},
+	"children" : [
+		{
+			"components" : {
+				"SFMLSprite" : {
+					"t" : { "x" : 0.0, "y" : 0.75, "z" : 0.1 },
+					"s" : {
+						"x" : 1.0,
+						"y" : 1.0,
+						"z" : 1.0
+					},
+					"r" : 0.0,
+					"tex" : "tex/daisy_red.png"
+				}
+			}
+		}
+	]
+}

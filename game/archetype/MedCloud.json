@@ -1,0 +1,17 @@
+{
+	"components" : {
+		"SFMLSprite" : {
+			"t" : { "x" : 0.5, "y" : 0.8, "z" : -9.0 },
+			"tex" : "tex/cloud_med4.png",
+			"s" : {
+				"x" : 0.3, "y" : 0.15
+			},
+			"color" : {
+				"a" : 0.5
+			}
+		},
+		"DriftComp" : {
+			"speed" : 0.01
+		}
+	}
+}
